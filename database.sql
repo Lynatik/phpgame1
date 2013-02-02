@@ -28,6 +28,14 @@ CREATE TABLE `account` (
 	PRIMARY KEY(`id`)
 );
 
+DROP TABLE IF EXISTS `area`;
+CREATE TABLE `area` (
+	`id` TINYINT UNSIGNED NOT NULL,
+	`name` VARCHAR(20) NOT NULL,
+	`about` VARCHAR(255) NOT NULL DEFAULT "",
+	`enable_pvp` BOOLEAN NOT NULL DEFAULT TRUE,
+	PRIMARY KEY(`id`)
+);
 
 DROP TABLE IF EXISTS `level_info`;
 CREATE TABLE `level_info` (
