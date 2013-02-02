@@ -27,3 +27,14 @@ CREATE TABLE `account` (
 
 	PRIMARY KEY(`id`)
 );
+
+
+DROP TABLE IF EXISTS `level_info`;
+CREATE TABLE `level_info` (
+	`lvl` TINYINT UNSIGNED NOT NULL,
+	`exp` INT UNSIGNED NOT NULL,
+	`skills` TINYINT UNSIGNED NOT NULL DEFAULT 3,
+	PRIMARY KEY(`lvl`)
+);
+
+-- тестовое изминение
