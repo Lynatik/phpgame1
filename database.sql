@@ -33,8 +33,23 @@ DROP TABLE IF EXISTS `level_info`;
 CREATE TABLE `level_info` (
 	`lvl` TINYINT UNSIGNED NOT NULL,
 	`exp` INT UNSIGNED NOT NULL,
-	`skills` TINYINT UNSIGNED NOT NULL DEFAULT 3,
-	PRIMARY KEY(`lvl`)
+	`skills` TINYINT UNSIGNED NOT NULL DEFAULT 3
+
 );
+
+
+
+DROP TABLE IF EXISTS `account`;
+CREATE TABLE `account` (
+	`id` TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
+	`name` VARCHAR(20) NOT NULL,
+	`discribe` TEXT(20) NOT NULL,
+
+
+	PRIMARY KEY(`id`)
+);
+
+
+
 
 -- тестовое изминение
