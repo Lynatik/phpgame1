@@ -37,19 +37,11 @@ CREATE TABLE `level_info` (
 
 );
 
-
-
-DROP TABLE IF EXISTS `account`;
-CREATE TABLE `account` (
+DROP TABLE IF EXISTS `fraction`;
+CREATE TABLE `fraction` (
 	`id` TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
-	`name` VARCHAR(20) NOT NULL,
-	`discribe` TEXT(20) NOT NULL,
-
+	`discribe` LONGTEXT NOT NULL,
+	`color` VARCHAR(20) NOT NULL,
 
 	PRIMARY KEY(`id`)
 );
-
-
-
-
--- тестовое изминение
