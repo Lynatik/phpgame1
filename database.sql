@@ -36,3 +36,5 @@ CREATE TABLE `level_info` (
 	`skills` TINYINT UNSIGNED NOT NULL DEFAULT 3
 
 );
+
+-- тестовое изминение
